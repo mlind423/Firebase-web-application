@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="signIn">
+            <input type="email" id="email" placeholder="Email@gmail.com" required> <br>
+            <input type="password" id="password" placeholder="New Password" required><br>
+            <section id="createQuestions" hidden>
+                <input type="text" id="username" placeholder="username"><br>
+                <select id="animal">
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Horse">Horse</option>
+                </select>
+            </section>
+            <button id="login">Login</button>
+            <button id="createAccount" hidden>Create Account</button> <br>
+            <label for="create" id="createLabel">Create an account?</label>
+            <input type="checkbox" id="create">
+        </div>
+        <div id="accountInfo" hidden>
+            <p id="lastLogin"></p>
+            <input type="email" id="emailUser"> <br>
+            <section id="createQuestionsUser">
+                <input type="text" id="usernameUser"><br>
+                <select id="animalUser">
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Horse">Horse</option>
+                </select>
+            </section>
+            <button id="update">Update</button>
+            <button id="logOut">log Out</button>
+        </div>
+
+        <script type="module" src="Firebase.js"></script>
+    </body>
+</html>
